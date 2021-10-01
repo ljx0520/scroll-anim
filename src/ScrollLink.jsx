@@ -1,6 +1,7 @@
 /**
  * Created by jljsj on 16/1/13.
  */
+/* jshint esversion: 6 */
 import React, { createElement } from 'react';
 import PropTypes from 'prop-types';
 import easingTypes from 'tween-functions';

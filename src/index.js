@@ -1,4 +1,5 @@
 // export this package's api
+/* jshint esversion: 6 */
 import { polyfill } from 'react-lifecycles-compat';
 import ScrollOverPack from './ScrollOverPack';
 import ScrollParallax from './ScrollParallax';

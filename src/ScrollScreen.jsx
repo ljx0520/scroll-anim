@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 import easingTypes from 'tween-functions';
 import requestAnimationFrame from 'raf';
 import EventListener from './EventDispatcher';

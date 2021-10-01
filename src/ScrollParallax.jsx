@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 import React from 'react';
 import PropTypes from 'prop-types';
 import easingTypes from 'tween-functions';

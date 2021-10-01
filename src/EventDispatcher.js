@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 import { dataToArray } from './util';
 
 const scrollId = 'scroll-id';
