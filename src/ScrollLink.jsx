@@ -2,7 +2,6 @@
  * Created by jljsj on 16/1/13.
  */
 import React, { createElement } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import easingTypes from 'tween-functions';
 import requestAnimationFrame from 'raf';
@@ -51,10 +50,11 @@ class ScrollLink extends React.Component {
     this.state = {
       active: false,
     };
+    this.domRef = React.createRef();
   }
 
   componentDidMount() {
-    this.dom = ReactDOM.findDOMNode(this);
+    this.dom = this.domRef.current;
     this.target = this.props.targetId && document.getElementById(this.props.targetId);
     scrollLinkLists.push(this);
     const date = Date.now();
@@ -99,7 +99,7 @@ class ScrollLink extends React.Component {
     const t = transformArguments(this.props.showHeightActive)[0];
     const toShow = t.match('%') ? this.clientHeight * parseFloat(t) / 100 : t;
     return this.props.toShowHeight ?
-      toTop - toShow + 0.5 : toTop;
+        toTop - toShow + 0.5 : toTop;
   }
 
   cancelRequestAnimationFrame = () => {
@@ -135,7 +135,7 @@ class ScrollLink extends React.Component {
     const progressTime = now - this.initTime > duration ? duration : now - this.initTime;
     // 动画时也会改变高度，动态获取
     const easeValue = easingTypes[this.props.ease](progressTime, this.scrollTop,
-      this.getToTop(), duration);
+        this.getToTop(), duration);
     if (this.target) {
       this.target.scrollTop = easeValue;
     } else {
@@ -176,13 +176,13 @@ class ScrollLink extends React.Component {
     const top = Math.round(- elementRect.top + targetTop);
     const showHeightActive = transformArguments(this.props.showHeightActive);
     const startShowHeight = showHeightActive[0].toString().indexOf('%') >= 0 ?
-      parseFloat(showHeightActive[0]) / 100 * clientHeight :
-      parseFloat(showHeightActive[0]);
+        parseFloat(showHeightActive[0]) / 100 * clientHeight :
+        parseFloat(showHeightActive[0]);
     const endShowHeight = showHeightActive[1].toString().indexOf('%') >= 0 ?
-      parseFloat(showHeightActive[1]) / 100 * clientHeight :
-      parseFloat(showHeightActive[1]);
+        parseFloat(showHeightActive[1]) / 100 * clientHeight :
+        parseFloat(showHeightActive[1]);
     if (top >= Math.round(-startShowHeight)
-      && top < Math.round(elementClientHeight - endShowHeight)) {
+        && top < Math.round(elementClientHeight - endShowHeight)) {
       this.addActive();
     } else {
       this.remActive();
@@ -213,8 +213,8 @@ class ScrollLink extends React.Component {
     const reg = new RegExp(active, 'ig');
     const className = props.className || '';
     props.className = className.indexOf(active) === -1 ?
-      `${className} ${active}`.trim() : className.replace(reg, '').trim();
-    return createElement(this.props.component, { ...props, ...componentProps });
+        `${className} ${active}`.trim() : className.replace(reg, '').trim();
+    return createElement(this.props.component, { ...props, ...componentProps, ref: this.domRef });
   }
 }
 ScrollLink.isScrollLink = true;
