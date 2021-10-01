@@ -1,36 +1,32 @@
 webpackJsonp([5],{
 
-/***/ 162:
+/***/ 163:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(163);
+module.exports = __webpack_require__(164);
 
 
 /***/ }),
 
-/***/ 163:
+/***/ 164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_classCallCheck__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_classCallCheck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_classCallCheck__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_createClass__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_createClass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_createClass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rc_scroll_anim__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_index_less__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__assets_index_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rc_scroll_anim__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_index_less__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_index_less__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // use jsx to render html, do not modify simple.html
 
@@ -39,17 +35,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var ScrollParallax = __WEBPACK_IMPORTED_MODULE_4_rc_scroll_anim__["a" /* default */].Parallax;
-var ScrollElement = __WEBPACK_IMPORTED_MODULE_4_rc_scroll_anim__["a" /* default */].Element;
-var _package = __webpack_require__(58);
+var ScrollParallax = __WEBPACK_IMPORTED_MODULE_0_rc_scroll_anim__["a" /* default */].Parallax;
+var ScrollElement = __WEBPACK_IMPORTED_MODULE_0_rc_scroll_anim__["a" /* default */].Element;
+var _package = __webpack_require__(59);
 
 var Demo = function (_React$Component) {
-  __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default()(Demo, _React$Component);
+  _inherits(Demo, _React$Component);
 
   function Demo(props) {
-    __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_classCallCheck___default()(this, Demo);
+    _classCallCheck(this, Demo);
 
-    var _this = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default()(this, (Demo.__proto__ || Object.getPrototypeOf(Demo)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Demo.__proto__ || Object.getPrototypeOf(Demo)).call(this, props));
 
     _this.onComplete = function (e) {
       console.log(e);
@@ -78,24 +74,24 @@ var Demo = function (_React$Component) {
     return _this;
   }
 
-  __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_createClass___default()(Demo, [{
+  _createClass(Demo, [{
     key: 'render',
     value: function render() {
       var _this2 = this;
 
-      return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         'div',
         null,
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'div',
           { className: 'pack-page page0 ' },
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'div',
             { className: 'home-title' },
-            __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               'div',
               { className: 'page-title' },
-              __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                 'p',
                 null,
                 _package.name,
@@ -103,10 +99,10 @@ var Demo = function (_React$Component) {
                 _package.version
               )
             ),
-            __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               'div',
               { className: 'page-description', key: 'c' },
-              __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                 'p',
                 null,
                 'The parallax demo'
@@ -114,7 +110,7 @@ var Demo = function (_React$Component) {
             )
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'div',
           { className: 'pack-page',
             style: {
@@ -124,7 +120,7 @@ var Demo = function (_React$Component) {
               height: 1600
             }
           },
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { opacity: 1 },
@@ -134,7 +130,7 @@ var Demo = function (_React$Component) {
             },
             'transform \u5FC5\u9700\u5728 style \u91CC\u8BBE\u5B9A\u521D\u59CB\u503C'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { opacity: 1 },
@@ -143,7 +139,7 @@ var Demo = function (_React$Component) {
             },
             '\u9ED8\u8BA4\u663E\u793A\u4F4D\u7F6E[0 ,1]'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: {
@@ -156,7 +152,7 @@ var Demo = function (_React$Component) {
             },
             'Scale'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { rotate: 360 },
@@ -165,7 +161,7 @@ var Demo = function (_React$Component) {
             },
             'rotate'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { x: 0, opacity: 1 },
@@ -179,7 +175,7 @@ var Demo = function (_React$Component) {
             },
             'X'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { rotateY: 360 },
@@ -188,7 +184,7 @@ var Demo = function (_React$Component) {
             },
             'rotateY'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { opacity: 1 },
@@ -197,7 +193,7 @@ var Demo = function (_React$Component) {
             },
             '\u81EA\u5B9A\u4E49\u663E\u793A\u4F4D\u7F6E'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { blur: '0px', playScale: [0.5, 0.8], opacity: 1 },
@@ -206,7 +202,7 @@ var Demo = function (_React$Component) {
             },
             'blur'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { color: '#fff000', backgroundColor: '#F38EAD', playScale: [0.3, 0.8] },
@@ -215,7 +211,7 @@ var Demo = function (_React$Component) {
             },
             'color'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { opacity: 1 },
@@ -224,7 +220,7 @@ var Demo = function (_React$Component) {
             },
             '\u591A\u79CD\u6837\u5F0F\u65F6\u95F4\u8F74\u52A8\u753B'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: [{ opacity: 1, playScale: [0, 0.2] }, { blur: '0px', backgroundColor: '#F38EAD', playScale: [0, 0.2] }, {
@@ -239,7 +235,7 @@ var Demo = function (_React$Component) {
             'timeline'
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'div',
           { className: 'pack-page',
             style: {
@@ -249,52 +245,52 @@ var Demo = function (_React$Component) {
               fontSize: 36
             }
           },
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'div',
             { className: 'page2-title' },
             '\u89C6\u5DEE\u793A\u4F8B'
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { translateY: 120, opacity: 1, ease: 'linear', playScale: [0, 2] },
               style: { transform: 'translateY(420px) scale(.8)', color: '#fff' }
             },
-            __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('img', {
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', {
               src: 'https://os.alipayobjects.com/rmsportal/CrVCkwvtTQQvQHL.png',
               style: { width: 100 },
               alt: 'img'
             })
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { translateY: 20, opacity: 1, ease: 'linear', playScale: [0, 1.5] },
               style: { transform: 'translateY(380px) scale(.9)', color: '#fff' }
             },
-            __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('img', {
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', {
               src: 'https://os.alipayobjects.com/rmsportal/sfmdyWNlweIvfUh.png',
               style: { width: 150 },
               alt: 'img'
             })
           ),
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               animation: { translateY: -100, opacity: 1, ease: 'linear', playScale: [0, 1.2] },
               style: { transform: 'translateY(320px)', color: '#fff' }
             },
-            __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('img', {
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', {
               src: 'https://os.alipayobjects.com/rmsportal/sfmdyWNlweIvfUh.png',
               style: { width: 200 },
               alt: 'img'
             })
           )
         ),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           ScrollElement,
           { style: { height: 2000 }, id: 'Scroll-Pack' },
-          __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             ScrollParallax,
             {
               className: 'pack-page',
@@ -317,7 +313,7 @@ var Demo = function (_React$Component) {
               },
               style: this.state.css
             },
-            __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(ScrollParallax, {
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ScrollParallax, {
               animation: { translateX: '0%', playScale: [1, 2] },
               style: {
                 transform: 'translateX(-100%)',
@@ -328,7 +324,7 @@ var Demo = function (_React$Component) {
               },
               location: 'Scroll-Pack'
             }),
-            __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               ScrollParallax,
               {
                 animation: [{ translateY: 0 }, { translateY: '450px' }],
@@ -349,11 +345,11 @@ var Demo = function (_React$Component) {
   }]);
 
   return Demo;
-}(__WEBPACK_IMPORTED_MODULE_5_react___default.a.Component);
+}(__WEBPACK_IMPORTED_MODULE_1_react___default.a.Component);
 
-__WEBPACK_IMPORTED_MODULE_6_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(Demo, null), document.getElementById('__react-content'));
+__WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Demo, null), document.getElementById('__react-content'));
 
 /***/ })
 
-},[162]);
+},[163]);
 //# sourceMappingURL=parallax.js.map
