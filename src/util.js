@@ -1,6 +1,6 @@
 /* jshint esversion: 6 */
-/*jslint browser: true */
-/*global window */
+/* jslint browser: true */
+/* global window */
 import React from 'react';
 
 export const windowIsUndefined = !(
